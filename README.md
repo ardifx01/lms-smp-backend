@@ -1,66 +1,96 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/fadillrr/lms-smp-backend/main/public/logoo.png" width="200" alt="Logo SMP Digital">
 </p>
 
-## About Laravel
+<h1 align="center">LMS SMP Digital - Backend</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ini adalah backend API untuk aplikasi Learning Management System (LMS) SMP Digital. Dibangun menggunakan Laravel, API ini menyediakan semua fungsionalitas inti yang dibutuhkan oleh aplikasi, termasuk autentikasi pengguna, manajemen konten pembelajaran, dan interaksi antar pengguna.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Backend ini dirancang untuk menjadi headless, artinya ia hanya fokus pada penyediaan data dalam format JSON dan tidak memiliki tampilan sendiri. Ia melayani data untuk Frontend Next.js (ganti dengan link repo frontend Anda).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+✨ Fitur Utama
+Autentikasi Aman: Menggunakan Laravel Sanctum untuk autentikasi berbasis token.
 
-## Learning Laravel
+Manajemen Peran: Sistem membedakan antara peran Guru dan Murid dengan hak akses yang berbeda.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Manajemen Materi: Guru dapat mengupload file materi (PDF, DOCX, dll.) untuk setiap kelas.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Manajemen Tugas & Penilaian: Guru dapat membuat tugas, dan murid dapat mengumpulkan jawaban. Guru kemudian dapat memberikan nilai dan feedback.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Forum Diskusi: Pengguna dapat membuat topik diskusi baru dan saling membalas komentar di dalam kelas mereka.
 
-## Laravel Sponsors
+Manajemen Profil: Pengguna dapat memperbarui informasi pribadi mereka, termasuk nama, email, password, dan foto profil.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Fitur Tambahan: Termasuk rekap nilai, pencarian, dan ekspor data nilai ke PDF untuk wali kelas.
 
-### Premium Partners
+🛠️ Teknologi yang Digunakan
+PHP
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Laravel Framework
 
-## Contributing
+MySQL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Laravel Sanctum (untuk Autentikasi API)
 
-## Code of Conduct
+barryvdh/laravel-dompdf (untuk Ekspor PDF)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+🚀 Panduan Instalasi Lokal
+Berikut adalah cara untuk menjalankan proyek ini di lingkungan development lokal Anda menggunakan Laragon.
 
-## Security Vulnerabilities
+Prasyarat
+Laragon (atau environment sejenis seperti XAMPP/WAMP dengan Composer)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Git
 
-## License
+Langkah-langkah Instalasi
+Clone Repositori
+Buka terminal Laragon Anda, masuk ke direktori www, lalu clone proyek ini:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+git clone [https://github.com/fadillrr/lms-smp-backend.git](https://github.com/fadillrr/lms-smp-backend.git)
+cd lms-smp-backend
+
+Install Dependensi
+Gunakan Composer untuk menginstal semua paket PHP yang dibutuhkan.
+
+composer install
+
+Setup File Environment (.env)
+Salin file contoh .env dan buat file .env Anda sendiri.
+
+copy .env.example .env
+
+Buka file .env yang baru dibuat dan sesuaikan konfigurasi database Anda. Pengaturan default Laragon biasanya sudah sesuai.
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=lms_smp  // Pastikan Anda sudah membuat database ini
+DB_USERNAME=root
+DB_PASSWORD=
+
+Generate Kunci Aplikasi
+Setiap aplikasi Laravel memerlukan kunci enkripsi yang unik.
+
+php artisan key:generate
+
+Jalankan Migrasi Database
+Perintah ini akan membuat semua tabel yang dibutuhkan di dalam database lms_smp.
+
+php artisan migrate
+
+Buat Symbolic Link untuk Storage
+Ini sangat penting agar file yang diupload (seperti foto profil) bisa diakses dari web.
+
+php artisan storage:link
+
+Jalankan Server Development
+Sekarang, Anda siap menjalankan server backend.
+
+php artisan serve
+
+Server akan berjalan di http://127.0.0.1:8000.
+
+(Opsional) Menambahkan Data Awal
+Untuk mengisi database Anda dengan data contoh (1 guru, 1 murid, dll.), Anda bisa menjalankan php artisan tinker dan menempelkan kode seeder yang telah kita gunakan selama proses development.
+
+Dengan mengikuti langkah-langkah ini, backend API Anda akan berjalan dan siap menerima permintaan dari frontend.
