@@ -1,5 +1,6 @@
 <p align="center">
-<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/fadillrr/lms-smp-backend/main/public/logoo.png" width="200" alt="Logo SMP Digital">
+<!-- Path diubah menjadi path direktori relatif -->
+<img src="./public/logoo.png" width="200" alt="Logo SMP Digital">
 </p>
 
 <h1 align="center">LMS SMP Digital - Backend</h1>
