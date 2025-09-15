@@ -6,7 +6,7 @@
 
 Ini adalah backend API untuk aplikasi **Learning Management System (LMS) SMP Digital**. Dibangun menggunakan **Laravel**, API ini menyediakan semua fungsionalitas inti yang dibutuhkan oleh aplikasi, termasuk autentikasi pengguna, manajemen konten pembelajaran, dan interaksi antar pengguna.
 
-Backend ini dirancang untuk menjadi *headless*, artinya ia hanya fokus pada penyediaan data dalam format JSON dan tidak memiliki tampilan sendiri. Ia melayani data untuk [**Frontend Next.js**](https://github.com/fadillrr/lms-smp-frontend).
+Backend ini dirancang untuk menjadi *headless*, artinya ia hanya fokus pada penyediaan data dalam format JSON dan tidak memiliki tampilan sendiri. Ia melayani data untuk [**Frontend Next.js**](https://github.com/ardifx01/lms-smp-frontend).
 
 ---
 
@@ -45,7 +45,7 @@ Berikut adalah cara untuk menjalankan proyek ini di lingkungan development lokal
 1.  **Clone Repositori**
     Buka terminal Laragon Anda, masuk ke direktori `www`, lalu clone proyek ini:
     ```bash
-    git clone [https://github.com/fadillrr/lms-smp-backend.git](https://github.com/fadillrr/lms-smp-backend.git)
+    git clone [https://github.com/ardifx01/lms-smp-backend.git](https://github.com/ardifx01/lms-smp-backend.git)
     cd lms-smp-backend
     ```
 
